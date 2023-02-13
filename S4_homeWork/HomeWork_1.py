@@ -32,22 +32,28 @@
 # print(s)
 
 
-def calc_pi(d):
-    # Initialize denominator
-    k = 1
-    # Initialize sum
-    s = 0
-    for i in range(int(1 / d)):
-        # even index elements are positive
-        if i % 2 == 0:
-            s += 4 / k
-        else:
-            # odd index elements are negative
-            s -= 4 / k
-        # denominator is odd
-        k += 2
-    return s
+# def calc_pi(d):
+#     # Initialize denominator
+#     k = 1
+#     # Initialize sum
+#     s = 0
+#     for i in range(int(1 / d)):
+#         # even index elements are positive
+#         if i % 2 == 0:
+#             s += 4 / k
+#         else:
+#             # odd index elements are negative
+#             s -= 4 / k
+#         # denominator is odd
+#         k += 2
+#     return s
 
 
-d = float(input("Задайте точность вычисления (0,001):\n"))
-print(f"Число π = {calc_pi(d)}")
+# d = float(input("Задайте точность вычисления (0,001):\n"))
+# print(f"Число π = {calc_pi(d)}")
+
+from math import pi
+
+num = int(input("Введите число знаков после запятой: "))
+stroka = str(pi)
+print("π = ", float(stroka[:num+2]))
