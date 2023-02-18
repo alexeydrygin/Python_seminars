@@ -22,19 +22,19 @@ def add_contact(surname, name, phone_number, description):
     print("Контакт добавлен успешно.")
 
 def view_contacts():
-    print("Фамилия\t\t\tИмя\t\t\tТелефон\t\t\tПримечание")
+    print("Фамилия\t\tИмя\t\tТелефон\t\tПримечание")
     print("---------------------------------")
     for contact in PHONEBOOK_DATA:
         if len(contact) >= 4:
-            print(f"{contact[0]}\t\t\t{contact[1]}\t\t\t{contact[2]}\t\t\t{contact[3]}")
+            print(f"{contact[0]}\t\t{contact[1]}\t\t{contact[2]}\t\t{contact[3]}")
 
 def search_contact(surname):
     found_contacts = [contact for contact in PHONEBOOK_DATA if contact[0] == surname]
     if found_contacts:
-        print(f"Фамилия\t\t\tИмя\t\t\tТелефон\t\t\tПримечание")
+        print(f"Фамилия\t\tИмя\t\tТелефон\t\tПримечание")
         print("---------------------------------")
         for contact in found_contacts:
-            print(f"{contact[0]}\t\t\t{contact[1]}\t\t\t{contact[2]}\t\t\t{contact[3]}")
+            print(f"{contact[0]}\t\t{contact[1]}\t\t{contact[2]}\t\t{contact[3]}")
     else:
         print("Контакт не найден.")
 
