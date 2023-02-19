@@ -1,4 +1,4 @@
-TOKEN = "5976766519:AAE-F_WQoDdZ-Eu4qbZ7c4DXgR7YxLHe5Zk"
+TOKEN = "-------------------------------------"
 
 import logging
 from telegram import Update
