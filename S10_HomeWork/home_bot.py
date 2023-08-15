@@ -51,7 +51,7 @@ def calculate(update, context):
 # Настройте бота с необходимыми обработчиками и начните опрос сообщений
 def main():
     # Вставьте свой токен бота здесь
-    TOKEN = 'YOUR_BOT_TOKEN'
+    TOKEN = '5976766519:AAE-F_WQoDdZ-Eu4qbZ7c4DXgR7YxLHe5Zk'
 
     updater = Updater(TOKEN, use_context=True)
     dispatcher = updater.dispatcher
